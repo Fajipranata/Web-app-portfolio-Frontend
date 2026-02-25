@@ -212,6 +212,7 @@ h1 {
   height: 30%;
   background: linear-gradient(to top, #2f855a, #38a169);
 }
+
 /* CONTENT ABOVE LAND */
 .home-content {
   position: relative;
@@ -306,7 +307,7 @@ h1 {
 }
 
 .page-container {
-  flex: 1;
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
