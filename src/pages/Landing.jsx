@@ -1,23 +1,50 @@
 import { useNavigate } from "react-router-dom"
+import { motion } from "framer-motion";
+import plane from "/home/fahmi/frontend/src/assets/plane.svg";
+import cloud from "/home/fahmi/frontend/src/assets/cloud.svg";
 
 function Landing() {
   const navigate = useNavigate();
 
   return (
     <div className="landing">
-      
-      <div className="cloud cloud-1">
-        <div className="puff puff-1"></div>
-        <div className="puff puff-2"></div>
-        <div className="puff puff-3"></div>
-      </div>
 
-      <div className="cloud cloud-2">
-        <div className="puff puff-1"></div>
-        <div className="puff puff-2"></div>
-        <div className="puff puff-3"></div>
-      </div>
-      
+      <motion.img
+        src={cloud}
+        className="cloud3"
+        initial={{ x: "-90vw" }}
+        animate={{ x: "180vw" }}
+        transition={{
+          duration: 100,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+
+      <motion.img
+        src={cloud}
+        className="cloud2"
+        initial={{ x: "-90vw" }}
+        animate={{ x: "180vw" }}
+        transition={{
+          duration: 60,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+
+     <motion.img
+        src={cloud}
+        className="cloud1"
+          initial={{ x: "-70vw"}}
+          animate={{ x: "100vw" }}
+          transition={{
+          duration: 30,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+
       <div className="hero-content">
         <h1 className="fade-in">
           Welcome to Fahmi's Portfolio
@@ -34,6 +61,7 @@ function Landing() {
 
           <button onClick={() => navigate("/login")}>
             Login as Admin
+          
           </button>
         </div>
       </div>
