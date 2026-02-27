@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion";
-import plane from "/home/fahmi/frontend/src/assets/plane.svg";
-import cloud from "/home/fahmi/frontend/src/assets/cloud.svg";
-import cloud2 from "/home/fahmi/frontend/src/assets/cloudwhite.svg";
+import plane from "../assets/plane.svg";
+import cloud from "../assets/cloud.svg";
+import cloud2 from "../assets/cloudwhite.svg";
 
 function Landing() {
   const navigate = useNavigate();

@@ -202,6 +202,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 /* LAND */
@@ -212,9 +213,19 @@ h1 {
   height: 20%;
   background: linear-gradient(
     to right, white 0%,#4CAF50 2%, #4CAF50 50%, #4CAF50 98%, rgb(255, 255, 255) 100%);
-}
 
-/* CONTENT ABOVE LAND */
+
+.home-container {
+  position: fixed;
+  inset: 0;
+  background-image: url("/src/assets/mountain2.svg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+}*/
+
 .home-content {
   position: relative;
   text-align: center;
@@ -227,6 +238,17 @@ h1 {
   color: #1c3d5a;
 }
 
+.mountain-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  transform: translateX(-53px) translateY(400px);
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(1px);
+}
+/* HOME SCENE */
 
 /* HERO CONTENT WRAPPER */
 .hero-content {
@@ -338,6 +360,14 @@ h1 {
   filter: blur(8px)
 }
 
+.cloud4 {
+  position: absolute;
+  top: 20px;
+  width: 100px;
+  opacity: 0.8;
+  filter: blur(8px)
+}
+
 .plane {
   position: absolute;
   width: 80px;
@@ -345,3 +375,5 @@ h1 {
   filter: blur(1px)
 }
 /*SVG Landing Object */
+
+/*SVG Home Object*/
