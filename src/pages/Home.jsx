@@ -33,7 +33,18 @@ function Home() {
           ease: "linear"
         }}
       />
-      <img src={mountain2} className="mountain-img" />
+       <motion.img
+        src={cloud2}
+        className="cloud5"
+        initial={{ x: "90vw" }}
+        animate={{ x: "-180vw" }}
+        transition={{
+          duration: 50,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+
       <div className="home-content">
         <h1>Welcome to my Page</h1>
       <p>I’m Fahmi Aji Pranata. Explore my portfolio to see what I’ve been building, or chat with my AI assistant to learn more about me.

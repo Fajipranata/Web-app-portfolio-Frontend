@@ -5,37 +5,49 @@ function ChatBox() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const sendMessage = async () => {
-    if (!message.trim()) return;
+const sendMessage = async () => {
+  if (!message.trim()) return;
 
-    const userMessage = { role: "user", text: message };
-    setMessages((prev) => [...prev, userMessage]);
-    setLoading(true);
+  const userMessage = { role: "user", content: message };
 
-    try {
-      const response = await fetch(
-        import.meta.env.VITE_API_URL + "/chat",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ message }),
-        }
-      );
+  const updatedMessages = [
+    ...messages.map((msg) => ({
+      role: msg.role === "ai" ? "assistant" : "user",
+      content: msg.text,
+    })),
+    userMessage,
+  ];
 
-      const data = await response.json();
+  setMessages((prev) => [...prev, { role: "user", text: message }]);
+  setLoading(true);
 
-      const aiMessage = { role: "ai", text: data.reply };
+  try {
+    const response = await fetch(
+      import.meta.env.VITE_API_URL + "/chat",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages: updatedMessages,
+        }),
+      }
+    );
 
-      setMessages((prev) => [...prev, aiMessage]);
-    } catch (error) {
-      console.error("Error:", error);
-    }
+    const data = await response.json();
 
-    setMessage("");
-    setLoading(false);
-  };
+    setMessages((prev) => [
+      ...prev,
+      { role: "ai", text: data.reply },
+    ]);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+
+  setMessage("");
+  setLoading(false);
+};
 
   return (
     <div className="chat-container">
