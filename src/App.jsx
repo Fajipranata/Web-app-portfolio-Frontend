@@ -8,11 +8,11 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import About from "./pages/About"
-import Contact from "./pages/Contact"
+import Mystory from "./pages/Mystory"
 import "./App.css"
 
 const verticalRoutes = ["/", "/home"];
-const horizontalRoutes = ["/projects", "/about", "/contact"];
+const horizontalRoutes = ["/projects", "/about", "/mystory"];
 
 const allRoutes = [
   ...verticalRoutes,
@@ -102,7 +102,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/mystory" element={<Mystory />} />
               <Route path="/login" element={<Login />} />
             </Routes>
           </motion.div>

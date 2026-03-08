@@ -333,7 +333,7 @@ h1 {
 .page-container {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  flex: 1;
 }
 
 /*SVG Landing Object */
@@ -597,3 +597,45 @@ h1 {
 }
 /*ABOUT-PAGE STYLING*/
 
+
+/*MYSTORY STORY PAGE*/
+.story-container{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.story-item{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  gap: 40px;
+  margin: 150px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 60px 0;
+  opacity: 0.4;
+  transform: scale(0.7);
+  will-change: transform; 
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  filter: blur(1px);
+}
+
+.story-image img{
+  width: 260px;
+  border-radius: 10px;
+}
+
+.reverse{
+  flex-direction: row-reverse;
+}
+
+.story-text{
+  flex: 1;
+}
+
+.story-item.active{
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
