@@ -29,13 +29,18 @@ function Contact() {
 
       <div className="story-container">
 
+        <div className="story-title">
+          <h1>My Story</h1>
+          <h2>This story is updated every time I have a major update</h2>
+        </div>
+
         <div className="story-item">
           <div className="story-image">
             <img src="./src/assets/childhood.webp" alt="childhood"/>
           </div>
           <div className="story-text">
             <p>
-              My name is Fahmi Aji Pranata and this is my story. I was born in Jakarta on the first of March 1997. I live in a regular family, with a nice mother, father, one brother and one sister. Both my parents are teachers, my father is a national history teacher and my mom is an English teacher. Just for the record, I can speak English fluently because of my hobby playing video games, not because of my mom. But my mom still plays a big role in my life. She is the one who encouraged me to learn and speak English. My education wasn't really special, I went to public school for 12 years. Primary school, junior high school and high school are public, I choose public because of my parents financial situation. My Primary and junior high school is a typical school, but my high school is a vocational high school focusing on automotive engineering courses. I made few achievements in my vocational high school, I was head of the journalism club and won a few photographic and journalistic competitions. Always top 3 in class and went to few automotive competitions and won 2nd place in east Jakarta and 3rd place in Jakarta.
+              My name is Fahmi Aji Pranata. I was born in Jakarta on the first of March 1997. I live in a regular family, with a nice mother, father, one brother and one sister. Both my parents are teachers, my father is a national history teacher and my mom is an English teacher. Just for the record, I can speak English fluently because of my hobby playing video games, not because of my mom. But my mom still plays a big role in my life. She is the one who encouraged me to learn and speak English. My education wasn't really special, I went to public school for 12 years. Primary school, junior high school and high school are public, I choose public because of my parents financial situation. My Primary and junior high school is a typical school, but my high school is a vocational high school focusing on automotive engineering courses. I made few achievements in my vocational high school, I was head of the journalism club and won a few photographic and journalistic competitions. Always top 3 in class and went to few automotive competitions and won 2nd place in east Jakarta and 3rd place in Jakarta.
             </p>
           </div>
         </div>
@@ -101,7 +106,7 @@ function Contact() {
           </div>
           <div className="story-text">
             <p>
-              I study programming by building my own web app portfolio, basically learning backend and frontend from zero alone. I started learning by buying an old laptop to become my server laptop. I installed Linux Ubuntu and started the very first step of my programming journey. Setting up the linux is not a big problem, but it took me 2 hours just to connect my server laptop to my wifi. It is so frustrating at the beginning but once it is connected, the relief, joy and happiness is intoxicating. The feeling of enjoyment and happiness that I haven't had in many years is back, I forgot how much I love technology. Since that I started to build my back end for the very first app I made, a Noted app. It fully backend not fancy frontend touch, no react, no node, no VSCode just plain backend. Because I only have 1 or 2 hours a day, It took 3 days to finish. But I have good back end experience, I run Linux server, Use Docker correctly, Build backend API, Connect to PostgreSQL and Run multi-container system. I do all that through my main laptop connected using SSH so I can control my server laptop. A got so many errors but thanks to google, chatGPT and stack overflow, slow but sure I learn how to debug.
+              I learning programming by building my own web app portfolio, basically learning backend and frontend from zero alone. I started learning by buying an old laptop to become my server laptop. I installed Linux Ubuntu and started the very first step of my programming journey. Setting up the linux is not a big problem, but it took me 2 hours just to connect my server laptop to my wifi. It is so frustrating at the beginning but once it is connected, the relief, joy and happiness is intoxicating. The feeling of enjoyment and happiness that I haven't had in many years is back, I forgot how much I love technology. Since that I started to build my back end for the very first app I made, a Noted app. It fully backend not fancy frontend touch, no react, no node, no VSCode just plain backend. Because I only have 1 or 2 hours a day, It took 3 days to finish. But I have good back end experience, I run Linux server, Use Docker correctly, Build backend API, Connect to PostgreSQL and Run multi-container system. I do all that through my main laptop connected using SSH so I can control my server laptop. A got so many errors but thanks to google, chatGPT and stack overflow, slow but sure I learn how to debug.
             </p>
           </div>
         </div>

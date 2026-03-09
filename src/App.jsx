@@ -44,12 +44,6 @@ function App() {
   let axis = "y";
   let direction = 1;
 
-  // 🚀 Always force downward animation when going to landing
-  if (location.pathname === "/") {
-    axis = "y";
-    direction = -1; // downward
-  }
-
   // 1️⃣ ALWAYS override when going to landing
   if (location.pathname === "/") {
     axis = "y";
