@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import About from "./pages/About"
 import Mystory from "./pages/Mystory"
+import AdminUpload from "./pages/AdminUpload";
 import "./App.css"
 
 const verticalRoutes = ["/", "/home"];
@@ -98,6 +99,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/mystory" element={<Mystory />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/admin" element={<AdminUpload />} />
             </Routes>
           </motion.div>
         </AnimatePresence>

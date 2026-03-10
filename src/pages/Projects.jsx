@@ -6,32 +6,59 @@ function Projects() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const projects = [
-  {
+    {
     id: 1,
-    title: "AI Portfolio Assistant",
-    description: "Personal AI chatbot powered by Ollama and Phi3.",
+    title: "Web App Portfolio",
+    description: "This web app portfolio is my first ever frontend project. This web app show all about me projects in interactive way.",
     tech: "React, Node.js, Ollama",
-    details: "This project runs a local AI assistant that answers questions about my portfolio.",
+    details: "A full-stack portfolio website with a built-in AI assistant that answers questions about me, my background, and my projects. The application integrates a React frontend with a FastAPI backend and a locally hosted AI model using Ollama.",
     images: [
       "./src/assets/japan1.webp",
       "./src/assets/covid2.webp"
     ],
-    github: "https://github.com/yourname/project",
+    github: "https://github.com/Fajipranata/FastAPI-portfolio-app",
     demo: "https://demo.com"
   },
     {
     id: 2,
-    title: "Web App Portfolio",
-    description: "Personal AI chatbot powered by Ollama and Phi3.",
+    title: "Note App",
+    description: "This web app portfolio is my first ever frontend project. This web app show all about me projects in interactive way.",
     tech: "React, Node.js, Ollama",
-    details: "This project runs a local AI assistant that answers questions about my portfolio.",
+    details: "A full-stack portfolio website with a built-in AI assistant that answers questions about me, my background, and my projects. The application integrates a React frontend with a FastAPI backend and a locally hosted AI model using Ollama.",
     images: [
-      "./src/assets/japan1.webp",
-      "./src/assets/covid2.webp"
+      "./src/assets/diploma1.webp",
+      "./src/assets/covid1.webp"
     ],
-    github: "https://github.com/yourname/project",
+    github: "https://github.com/Fajipranata/FastAPI-portfolio-app",
     demo: "https://demo.com"
   },
+    {
+    id: 3,
+    title: "Travel Quota",
+    description: "This web app portfolio is my first ever frontend project. This web app show all about me projects in interactive way.",
+    tech: "React, Node.js, Ollama",
+    details: "A full-stack portfolio website with a built-in AI assistant that answers questions about me, my background, and my projects. The application integrates a React frontend with a FastAPI backend and a locally hosted AI model using Ollama.",
+    images: [
+      "./src/assets/kobe1.webp",
+      "./src/assets/childhood.webp"
+    ],
+    github: "https://github.com/Fajipranata/FastAPI-portfolio-app",
+    demo: "https://demo.com"
+  },
+    {
+    id: 4,
+    title: "AWP Simulator",
+    description: "This web app portfolio is my first ever frontend project. This web app show all about me projects in interactive way.",
+    tech: "React, Node.js, Ollama",
+    details: "A full-stack portfolio website with a built-in AI assistant that answers questions about me, my background, and my projects. The application integrates a React frontend with a FastAPI backend and a locally hosted AI model using Ollama.",
+    images: [
+      "./src/assets/master1.webp",
+      "./src/assets/diploma2.webp"
+    ],
+    github: "https://github.com/Fajipranata/FastAPI-portfolio-app",
+    demo: "https://demo.com"
+  },
+  
   ];
 
 return (
@@ -46,15 +73,16 @@ return (
         onClick={() => {setSelectedProject(project);setCurrentImage(0);          
         }}
       >
-
-    <img
-      src={project.images?.[0]}
-      alt={project.title}
-    />
+        
+      <img
+        src={project.images?.[0]}
+        alt={project.title}
+      />
 
       <div className="project-info">
         <h3>{project.title}</h3>
           <p>{project.description}</p>
+          <p>{project.tech}</p>
         </div>
       </div>
     ))}
@@ -67,6 +95,13 @@ return (
         <div className="modal-content"
         onClick={(e) => e.stopPropagation()}
         >
+
+      <button
+        className="close-btn"
+        onClick={() => setSelectedProject(null)}
+      >
+        ✕
+      </button>
 
       <div className="slideshow">
 
@@ -113,20 +148,27 @@ return (
         {selectedProject.details}
       </p>
 
-          <div className="modal-buttons">
-            <button>Live Demo</button>
-            <button>GitHub</button>
-          </div>
+      <div className="modal-buttons">
+        <a
+          href={selectedProject.demo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="modal-btn"
+        >
+         Demo
+        </a>
 
-          <button
-            className="close-btn"
-            onClick={() => setSelectedProject(null)}
-          >
-            ✕
-          </button>
-
-        </div>
+        <a
+          href={selectedProject.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="modal-btn"
+        >
+          GitHub
+        </a>
       </div>
+      </div>
+    </div>
     )}
 
   </div>
