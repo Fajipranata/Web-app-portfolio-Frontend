@@ -1,65 +1,120 @@
+import profile from "../assets/fahmi.png";
+
 function About() {
   return (
     <div className="about-page">
-      <h1>About Me</h1>
 
-      <p>
-        My name is Fahmi Aji Pranata. I was born in Jakarta on March 1, 1997.
-        This page tells about me and the overall story of my journey — from
-        automotive engineering to building software and AI systems.
-      </p>
 
-      <h2>Early Life</h2>
-      <p>
-        I grew up in a regular family with my parents, one brother and one
-        sister. Both of my parents are teachers. My father teaches national
-        history and my mother teaches English. Ironically, I became fluent in
-        English mostly from playing video games, but my mother played a huge
-        role in encouraging me to learn the language.
-      </p>
+      <div className="about-layout">
 
-      <h2>Vocational School</h2>
-      <p>
-        I attended a vocational high school specializing in automotive
-        engineering. During this time I became head of the journalism club and
-        won several photography and journalism competitions. I also
-        participated in automotive competitions and achieved second place in
-        East Jakarta and third place in Jakarta.
-      </p>
 
-      <h2>First Programming Experience</h2>
-      <p>
-        During my diploma program at Astra Manufacturing Polytechnic, I was
-        given the challenge of creating a system to prevent excavators from
-        over-traveling. I used Arduino and learned C++ from scratch in just
-        two months to build the system. The project took six months and became
-        my final diploma assignment.
-      </p>
+        <div className="about-content fade-in-delay-about">
 
-      <h2>Japan Journey</h2>
-      <p>
-        After graduating in 2018, I moved to Japan to study Japanese in
-        Hokkaido. I became a student leader, won first place in a Japanese
-        speech contest, and even obtained a Japanese driving license.
-        Unfortunately the COVID-19 pandemic forced me to return to Indonesia
-        in 2020.
-      </p>
+          <h1>About Me</h1>
 
-      <h2>Education and Career</h2>
-      <p>
-        Back in Indonesia I completed my bachelor’s degree in Information
-        Technology and later pursued a master’s degree at the University of
-        Indonesia. My research focused on how online advertising influences
-        young adults’ intention to download online loan applications.
-      </p>
+          <h1>Fahmi Aji Pranata</h1>
+          <h3>Software Developer</h3>
 
-      <h2>Present</h2>
-      <p>
-        Today I work in Kobe, Japan as a manager trainee while studying
-        programming every day after work. My goal is to transition fully into
-        the technology industry. This portfolio and the AI assistant inside
-        it are part of my learning journey.
-      </p>
+          <p>
+            Automotive engineer turned software developer currently based
+            in Kobe, Japan. I specialize in building web applications
+            and experimenting with AI systems.
+          </p>
+
+        <p className="location">
+          📍 Kobe, Japan
+        </p>
+
+        <h2>Skills</h2>
+
+        <div className="skills">
+
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>Machine Learning</span>
+          <span>AI Systems</span>
+        </div>
+
+          <div className="timeline">
+
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>  
+              <div className="timeline-content">
+                <h3>1997</h3>
+                <p>
+                Born  
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>2015 — Vocational School</h3>
+                <p>
+                  Studied automotive engineering. Became head of the journalism club
+                  and won several photography competitions.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>2018 — Astra Polytechnic</h3>
+                <p>
+                  Built an excavator over-travel prevention system using Arduino
+                  and C++ as my final diploma project.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>2018 — Japan</h3>
+                <p>
+                  Studied Japanese in Hokkaido. Won first place in a Japanese
+                  speech contest and obtained a Japanese driving license.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>2024 — Master Degree</h3>
+                <p>
+                  Completed a master’s degree at the University of Indonesia
+                  focusing on online advertising behavior.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>Present</h3>
+                <p>
+                  Working in Kobe while studying software development and AI
+                  engineering every day.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="about-photo">
+          <img
+            src={profile}
+            alt="Fahmi Aji Pranata"
+          />
+        </div>    
+
+      </div>
     </div>
   );
 }
