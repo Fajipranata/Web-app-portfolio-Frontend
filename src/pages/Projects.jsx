@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import cloud2 from "../assets/cloudwhite.svg";
 
 function Projects() {
 
@@ -62,6 +64,7 @@ function Projects() {
   ];
 
 return (
+  
   <div className="projects-container">
 
     <h1>My Projects</h1>

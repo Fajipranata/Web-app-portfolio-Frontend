@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import cloud2 from "../assets/cloudwhite.svg";
 
 function Contact() {
 
@@ -28,6 +30,30 @@ function Contact() {
   return (
 
       <div className="story-container">
+              
+              <motion.img
+                src={cloud2}
+                className="cloud10"
+                initial={{ x: "90vw" }}
+                animate={{ x: "-180vw" }}
+                transition={{
+                  duration: 80,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+              />
+
+                            <motion.img
+                src={cloud2}
+                className="cloud11"
+                initial={{ x: "120vw" }}
+                animate={{ x: "-180vw" }}
+                transition={{
+                  duration: 90,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+              />
 
         <div className="story-title">
           <h1>My Story</h1>
@@ -84,7 +110,7 @@ function Contact() {
           </div>
           <div className="story-text">
             <p>
-            After completing my bachelor’s degree, I worked at Kobelco Trading Indonesia as a sales interpreter, connecting the main office in Japan with buyers in Indonesia. In May 2022, I received a scholarship to pursue my master’s degree at University of Indonesia, one of the top universities in the country, and began my studies in June 2022. During my studies, I served as class leader and also started a small Japanese food canteen business selling curry and chicken katsu to support myself financially. My thesis focused on the growing phenomenon of online lending applications in Indonesia, analyzing how online advertising influences Generation Z (ages 18–27) to download these apps. Using quantitative methods and Structural Equation Modeling (SEM) with 306 respondents, the research found that advertising incentives and informative content significantly increase the perceived value of advertisements, encouraging users to download the apps, while trust and perceived risk also play important roles in users’ decisions. I completed the program and graduated in October 2024 with cum laude, earning a Master’s degree in Business and Management with a focus on Digital Marketing.
+            After completing my bachelor’s degree, I worked at Kobelco Trading Indonesia as a sales interpreter, connecting the main office in Japan with buyers in Indonesia. In May 2022, I received a scholarship to pursue my master’s degree at University of Indonesia, one of the top universities in the country, I stop work in Kobelco and began my studies in June 2022. During my studies, I served as class leader and also started working as manager in a Japanese food store around campus to support myself financially while doing my master. My thesis focused on the growing phenomenon of online lending applications in Indonesia, analyzing how online advertising influences Generation Z (ages 18–27) to download these apps. Using quantitative methods and Structural Equation Modeling (SEM) with 306 respondents, the research found that advertising incentives and informative content significantly increase the perceived value of advertisements, encouraging users to download the apps, while trust and perceived risk also play important roles in users’ decisions. I completed the program and graduated in October 2024 with cum laude, earning a Master’s degree in Business and Management with a focus on Digital Marketing.
             </p>
           </div>
         </div>

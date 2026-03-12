@@ -44,58 +44,6 @@ button:hover {
   transform: translateY(-5px);
 }
 
-/*CLOUD
-@keyframes floatCloud {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(150vw);
-  }
-}
-.cloud {
-  position: absolute;
-  width: 260px;     
-  height: 160px;    
-  animation: floatCloud linear infinite;
-}
-.cloud-1 {
-  top: 20%;
-  left: -300px;
-  animation-duration: 45s;
-}
-.cloud-2 {
-  top: 60%;
-  left: -400px;
-  animation-duration: 70s;
-}
-.puff {
-  position: absolute;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.85;
-  filter: blur(3px);
-}
-.puff-1 {
-  width: 120px;
-  height: 120px;
-  left: 0;
-  bottom: 0;
-}
-.puff-2 {
-  width: 150px;
-  height: 150px;
-  left: 60px;
-  bottom: 20px;
-}
-.puff-3 {
-  width: 100px;
-  height: 100px;
-  left: 140px;
-  bottom: 0;
-}
-CLOUD*/
-
 .cta {
   padding: 12px 24px;
   font-size: 16px;
@@ -377,6 +325,38 @@ h1 {
   filter: blur(8px)
 }
 
+.cloud8 {
+  position: absolute;
+  top: 150px;
+  width: 140px;
+  opacity: 0.8;
+  filter: blur(8px)
+}
+
+.cloud9 {
+  position: absolute;
+  top: 500px;
+  width: 140px;
+  opacity: 0.8;
+  filter: blur(8px)
+}
+
+.cloud10 {
+  position: absolute;
+  top: 150px;
+  width: 120px;
+  opacity: 0.8;
+  filter: blur(8px)
+}
+
+.cloud11 {
+  position: absolute;
+  top: 500px;
+  width: 120px;
+  opacity: 0.8;
+  filter: blur(8px)
+}
+
 .plane {
   position: absolute;
   width: 80px;
@@ -532,6 +512,7 @@ h1 {
   max-width: 1000px;
   margin: auto;
   overflow: auto;
+  z-index: 1;
 }
 
 .project-card {
@@ -545,6 +526,7 @@ h1 {
   border-radius: 10px;
   border: 0px solid #1c3d5a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1;
 }
 
 .project-card:hover {
@@ -713,7 +695,7 @@ h1 {
 
 .location{
   margin:10px;
-  font-size:14px;
+  font-size:16px;
 }
 
 section{
@@ -742,9 +724,8 @@ section{
 .timeline{
   position:relative;
   margin-top:40px;
+  margin-bottom: 40px;
 }
-
-/* vertical line */
 
 .timeline::before{
   content:"";
@@ -756,15 +737,11 @@ section{
   background:#ddd;
 }
 
-/* each item */
-
 .timeline-item{
   position:relative;
   padding-left:40px;
-  margin-bottom:40px;
+  margin-bottom:10px;
 }
-
-/* dot */
 
 .timeline-dot{
   position:absolute;
@@ -777,8 +754,6 @@ section{
   border:3px solid white;
   box-shadow:0 0 0 2px #111;  
 }
-
-/* content */
 
 .timeline-content h3{
   margin:0;
