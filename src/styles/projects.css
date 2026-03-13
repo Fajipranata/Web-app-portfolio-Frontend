@@ -4,10 +4,12 @@
   max-width: 1000px;
   margin: auto;
   overflow: auto;
+  text-align: center;
   z-index: 1;
 }
 
 .project-card {
+  text-align: left;
   display: flex;
   flex-shrink: 0;
   gap: 20px;

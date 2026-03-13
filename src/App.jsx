@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import {Routes, Route } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { useRef } from "react";
@@ -10,7 +10,8 @@ import Projects from "./pages/Projects"
 import About from "./pages/About"
 import Mystory from "./pages/Mystory"
 import AdminUpload from "./pages/AdminUpload";
-import "./App.css"
+
+import "./styles/responsive.css"
 
 const verticalRoutes = ["/", "/home"];
 const horizontalRoutes = ["/projects", "/about", "/mystory"];
@@ -90,7 +91,7 @@ function App() {
               exit="exit"
               custom={{ axis, direction }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              style={{ height: "100%", overflowY: "auto" }}
+              style={{height: "100%", overflowY: "auto" }}
             >
             <Routes location={location}>
               <Route path="/" element={<Landing />} />

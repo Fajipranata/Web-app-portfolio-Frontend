@@ -6,7 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .home-container {

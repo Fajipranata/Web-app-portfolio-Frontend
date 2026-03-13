@@ -8,7 +8,7 @@
   top: 0;
   z-index: 10;
   background: transparent;
-  padding: 20px 80px;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-links a {

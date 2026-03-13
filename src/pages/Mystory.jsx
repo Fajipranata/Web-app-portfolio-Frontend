@@ -12,6 +12,7 @@ function Contact() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          
           if (entry.isIntersecting) {
             entry.target.classList.add("active");
           } else {
@@ -20,7 +21,7 @@ function Contact() {
         });
       },
       {
-        threshold: 0.6
+        threshold: 0.3
       }
     );
 
@@ -35,7 +36,7 @@ function Contact() {
               <motion.img
                 src={cloud2}
                 className="cloud10"
-                initial={{ x: "90vw" }}
+                initial={{ x: "150vw" }}
                 animate={{ x: "-180vw" }}
                 transition={{
                   duration: 80,
@@ -47,7 +48,7 @@ function Contact() {
                             <motion.img
                 src={cloud2}
                 className="cloud11"
-                initial={{ x: "120vw" }}
+                initial={{ x: "170vw" }}
                 animate={{ x: "-180vw" }}
                 transition={{
                   duration: 90,

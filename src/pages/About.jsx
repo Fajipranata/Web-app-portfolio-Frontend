@@ -13,7 +13,7 @@ function About() {
        <motion.img
         src={cloud2}
         className="cloud8"
-        initial={{ x: "100vw" }}
+        initial={{ x: "150vw" }}
         animate={{ x: "-180vw" }}
         transition={{
           duration: 70,
@@ -24,7 +24,7 @@ function About() {
        <motion.img
         src={cloud2}
         className="cloud9"
-        initial={{ x: "110vw" }}
+        initial={{ x: "170vw" }}
         animate={{ x: "-180vw" }}
         transition={{
           duration: 80,
