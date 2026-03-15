@@ -135,7 +135,8 @@ section{
   top: 150px;
   width: 140px;
   opacity: 0.8;
-  filter: blur(8px)
+  filter: blur(8px);
+  z-index: 0;
 }
 
 .cloud9 {
@@ -143,6 +144,7 @@ section{
   top: 500px;
   width: 140px;
   opacity: 0.8;
-  filter: blur(8px)
+  filter: blur(8px);
+  z-index: 0;
 }
 /*ABOUT-PAGE STYLING*/
