@@ -1,0 +1,10 @@
+.logout-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
