@@ -30,6 +30,7 @@
 
 .project-card:hover {
   transform: scale(1.03);
+  transition: all 0.3s ease;
 }
 
 .project-card img {
@@ -118,7 +119,6 @@ body.dark .project-tech {
 }
 
 .project-modal img {
-
   width: 100%;
   height: 300px;
   object-fit: contain;

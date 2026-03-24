@@ -25,7 +25,7 @@ function ChatBox() {
 
     try {
       const response = await fetch(
-        import.meta.env.VITE_API_URL + "/chat",
+        import.meta.env.VITE_CHATBOX_AI_URL + "/chat",
         {
           method: "POST",
           headers: {

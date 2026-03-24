@@ -5,19 +5,22 @@ import LogoutButton from "../components/LogoutButton"
 
 function Projects() {
 
-  const API_URL = import.meta.env.VITE_API_URL
+  const API_URL = import.meta.env.VITE_PROJECTS_CARD_URL
 
   const [selectedProject, setSelectedProject] = useState(null)
   const [editingProject, setEditingProject] = useState(null)
   const [projects, setProjects] = useState([])
   const [imageIndex, setImageIndex] = useState(0)
 
-  const fetchProjects = () => {
-    fetch(`${API_URL}/api/projects`)
-      .then(res => res.json())
-      .then(data => setProjects(data))
-      .catch(err => console.error(err))
-  }
+const fetchProjects = () => {
+  fetch(`${API_URL}/api/projects`)
+    .then(res => res.json()) // ✅ back to json
+    .then(data => {
+      console.log("DATA:", data)
+      setProjects(data) // ✅ THIS IS WHAT YOU'RE MISSING
+    })
+    .catch(err => console.error(err))
+}
 
   useEffect(()=>{
     fetchProjects()
@@ -52,7 +55,7 @@ const handleDelete = async (id) => {
 
       <h1>My Projects</h1>
 
-        {projects.map((project) => (
+        {Array.isArray(projects) && projects.map((project) => (
           <div
             className="project-card"
             key={project.id}
